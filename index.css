@@ -22,7 +22,7 @@
     margin-top: 10px; /* Adjust the top margin as needed */
 }
 .logo-img {
-    width: 20%; /* Adjust the width as needed */
+    width: 40%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
 }
 @media (min-width: 768px) {

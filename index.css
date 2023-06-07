@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+    .col-md-4 {
+        float: none;
+        width: 25%;
+    }
+    .purple {
+        color: #A020F0;
+      }
+      
+      .black {
+        color: #000000;
+      }
+      
+      .gold {
+        color: #FFD700;
+      }
+      
+      .white {
+        color: #ffffff;
+      }
+
+
+}    

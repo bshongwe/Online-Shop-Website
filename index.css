@@ -24,6 +24,7 @@
 .logo-img {
     width: 40%; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
+    margin-top: 10px;
 }
 @media (min-width: 768px) {
     .col-md-4 {

@@ -1,50 +1,50 @@
-*{
+* {
   padding: 0;
   margin: 0;
   font-family: 'Saira', sans-serif;
   box-sizing: border-box;
-  }
-  .hero {
+}
+
+.hero {
   height: 100%;
   width: 100%;
   background-image: url(Portfolio Background.jpg);
   background-size: cover;
   background-position: center;
-  }
-  span {
-    color: #c09f0e;
-  }
-  .logo-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    text-align: right;
-    margin-top: 10px; /* Adjust the top margin as needed */
 }
+
+span {
+  color: #c09f0e;
+}
+
+.logo-container {
+  position: absolute;
+  top: 50px; /* Adjust the top distance as needed */
+  right: 0;
+  text-align: right;
+}
+
 .logo-img {
-    width: 40%; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 50px;
-    margin-right: 20px;
+  width: 40%; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px;
 }
+
 @media (min-width: 768px) {
-    .col-md-4 {
-        float: none;
-        width: 25%;
-    }
-    .purple {
-        color: #A020F0;
-      }
-      
-      .black {
-        color: #791579;
-      }
-      
-      .gold {
-        color: #FFD700;
-      }
-      
-      .white {
-        color: #ffffff;
-      }
-}    
+  .col-md-4 {
+    float: none;
+    width: 25%;
+  }
+  .purple {
+    color: #A020F0;
+  }
+  .black {
+    color: #791579;
+  }
+  .gold {
+    color: #FFD700;
+  }
+  .white {
+    color: #ffffff;
+  }
+}

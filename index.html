@@ -82,12 +82,33 @@
         <div class="row">
             <div class="col-md-4">
                 <h2>PRODUCTS</h2>
-                <ul>
-                    <li><a href="#">Product 1</a></li>
-                    <li><a href="#">Product 2</a></li>
-                    <li><a href="#">Product 3</a></li>
-                    <li><a href="#">Product 4</a></li>
-                </ul>
+                <div class="gallery">
+                    <a target="_blank" href="001.jpg">
+                      <img src="001.jpg" alt="BH001" width="60" height="auto">
+                    </a>
+                    <div class="desc">BH001</div>
+                  </div>
+                  
+                  <div class="gallery">
+                    <a target="_blank" href="002.jpg">
+                      <img src="002.jpg" alt="Product 2" width="100" height="auto">
+                    </a>
+                    <div class="desc">BH002</div>
+                  </div>
+                  
+                  <div class="gallery">
+                    <a target="_blank" href="003.jpg">
+                      <img src="003.jpg" alt="Product 2" width="100" height="auto">
+                    </a>
+                    <div class="desc">BH003</div>
+                  </div>
+                  
+                  <div class="gallery">
+                    <a target="_blank" href="004.jpg">
+                      <img src="004.jpg" alt="Product 3" width="100" height="auto">
+                    </a>
+                    <div class="desc">BH004</div>
+                  </div>
             </div>
             <div class="col-md-4">
                 <h2>ABOUT</h2>
@@ -101,6 +122,33 @@
             </div>
         </div>
     </div>
+
+    <div class="form-popup" id="myForm">
+        <p><span>Customer Login</span></p>
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+    </div>
+
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

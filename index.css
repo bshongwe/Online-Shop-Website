@@ -19,13 +19,13 @@ span {
 
 .logo-container {
   position: absolute;
-  top: 70px; /* Adjust the top distance as needed */
+  top: 70px; /* Adjust the top distance */
   right: 0;
   text-align: right;
 }
 
 .logo-img {
-  width: 50%; /* Adjust the width as needed */
+  width: 50%; /* Adjusts the width */
   height: auto; /* Maintain aspect ratio */
   margin-right: 20px;
 }
@@ -64,20 +64,35 @@ span {
   opacity: 1;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  /* Mobile-specific styles */
+  .logo-container {
+    top: 30px; /* Adjusts the top distance */
+    right: 10px; /* Adjusts the right distance */
+    text-align: center;
+  }
+  .logo-img {
+    width: 40%; /* Adjusts the width */
+    margin-right: 0;
+  }
+
   .col-md-4 {
     float: none;
-    width: 25%;
+    width: 100%;
   }
+
   .purple {
     color: #A020F0;
   }
+
   .black {
     color: #791579;
   }
+
   .gold {
     color: #FFD700;
   }
+
   .white {
     color: #ffffff;
   }

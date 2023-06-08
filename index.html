@@ -78,7 +78,8 @@
 
     <div class="container">
         <h1><span>Blessed Hustle</span>online shop</h1>
-        <div class="animated-text"><p id="demo">Scents that make sense</p></div>
+        <p><span id="animated-text"></span></p>
+
         <div class="row">
             <div class="col-md-4">
                 <h2>PRODUCTS</h2>
@@ -140,35 +141,26 @@
 
     <script>
         var i = 0;
-        var txt = 'Scents that make sense';
-        var speed = 50;
-    
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("demo").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            } else {
-                // Animation re-trigger
-                i = 0;
-                document.getElementById("demo").innerHTML = '';
-                setTimeout(typeWriter, speed);
-            }
-        }
-    
-        window.onload = function() {
-            typeWriter();
-        };
-    </script>
+var txt = 'Scents that make sense';
+var speed = 50;
 
-    <script>
-        function openForm() {
-          document.getElementById("myForm").style.display = "block";
-        }
-        
-        function closeForm() {
-          document.getElementById("myForm").style.display = "none";
-        }
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("animated-text").textContent += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  } else {
+    // Animation re-trigger
+    i = 0;
+    document.getElementById("animated-text").textContent = '';
+    setTimeout(typeWriter, speed);
+  }
+}
+
+window.onload = function() {
+  typeWriter();
+};
+
     </script>
 
 

@@ -78,7 +78,7 @@
 
     <div class="container">
         <h1><span>Blessed Hustle</span>online shop</h1>
-        <p>Scents that make sense</p>
+        <p id="demo">Scents that make sense</p>
         <div class="row">
             <div class="col-md-4">
                 <h2>PRODUCTS</h2>
@@ -116,7 +116,6 @@
             </div>
             <div class="col-md-4">
                 <h2>CONTACT</h2>
-                <p>You can contact us at</p>
                 <p><a href="https://www.facebook.com/BlessedHustleOnlineShop"><i class="fab fa-facebook"></i>Facebook</a></p>
                 <p><a href="https://mail.google.com/mail/u/0/#inbox"><i class="fab fa-gmail"></i>Gmail</a></p>
             </div>
@@ -138,6 +137,29 @@
           <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
     </div>
+
+    <script>
+        var i = 0;
+        var txt = 'Lorem ipsum dummy text blabla.';
+        var speed = 50;
+      
+        function typeWriter() {
+          if (i < txt.length) {
+            document.getElementById("demo").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+          } else {
+            // Animation re-trigger
+            i = 0;
+            document.getElementById("demo").innerHTML = '';
+            setTimeout(typeWriter, speed);
+          }
+        }
+      
+        window.onload = function() {
+          typeWriter();
+        };
+      </script>
 
     <script>
         function openForm() {

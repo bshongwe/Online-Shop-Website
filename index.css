@@ -93,6 +93,7 @@ div.desc {
   background: #761da0;
   resize: none;
   min-height: 200px;
+  opacity: inherit;
 }
 
 /* When the textarea gets focus, do something */

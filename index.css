@@ -121,6 +121,13 @@ div.desc {
   opacity: 1;
 }
 
+.typing-container {
+  width: 300px; /* Adjusts width */
+  margin: 0 auto; /* Centers container horizontally */
+  padding: 20px; /* Adds padding for spacing */
+  border: 1px solid #ccc; /* Adds border */
+}
+
 @media (max-width: 768px) {
   /* Mobile-specific styles */
   .logo-container {

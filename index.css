@@ -123,7 +123,7 @@ div.desc {
 
 .typing-container {
   width: 300px; /* Adjusts width */
-  height: 200px; /* Adjusts height */
+  height: 50px; /* Adjusts height */
   margin: 0 auto; /* Centers container horizontally */
   padding: 20px; /* Adds padding for spacing */
   border: 1px solid #ccc; /* Adds border */

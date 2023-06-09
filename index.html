@@ -78,6 +78,37 @@
 
     <div class="container">
         <h1><span>Blessed Hustle</span>online shop</h1>
+
+        <div class="typing-container">
+            <div class="animated-text">
+              <p id="demo">
+                <span id="text-span">Scents that make sense</span>
+              </p>
+            </div>
+        </div>
+        <script>
+            var i = 0;
+            var txt = 'Scents that make sense';
+            var speed = 100;
+          
+            function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("text-span").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                } else {
+                    // Animation re-trigger
+                    i = 0;
+                    document.getElementById("text-span").innerHTML = '';
+                    setTimeout(typeWriter, speed);
+                }
+            }
+    
+            window.onload = function() {
+                typeWriter();
+            };
+            </script>
+        </div>
         
         <div class="row">
             <div class="col-md-4">
@@ -152,38 +183,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
-<footer>
+<footer></footer>
 
-    <div class="typing-container">
-        <div class="animated-text">
-          <p id="demo">
-            <span id="text-span">Scents that make sense</span>
-          </p>
-        </div>
-    </div>
-    <script>
-        var i = 0;
-        var txt = 'Scents that make sense';
-        var speed = 100;
-      
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("text-span").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            } else {
-                // Animation re-trigger
-                i = 0;
-                document.getElementById("text-span").innerHTML = '';
-                setTimeout(typeWriter, speed);
-            }
-        }
-
-        window.onload = function() {
-            typeWriter();
-        };
-        </script>
-    </div>
-
-</footer>
 </html>

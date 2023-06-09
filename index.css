@@ -67,6 +67,26 @@ div.desc {
   width: 280px;
 }
 
+/* Pop-up Chat settings */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
 /* The popup form - hidden by default */
 .form-popup {
   display: none;

@@ -54,7 +54,7 @@ div.desc {
 * {box-sizing: border-box;}
 
 /* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
+.open-button.chat-button {
   background-color: #555;
   color: white;
   padding: 16px 20px;
@@ -64,8 +64,24 @@ div.desc {
   position: fixed;
   bottom: 23px;
   right: 28px;
-  width: 280px;
+  width: 140px; /* Adjusts width */
+  z-index: 10; /* Increases z-index to ensure it's above other elements */
 }
+
+.open-button.login-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 178px; /* Adjusts right position to separate the buttons */
+  width: 200px; /* Adjusts width */
+  z-index: 10; /* Increase z-index to ensure it's above other elements */
+}
+
 
 /* Pop-up Chat settings */
 .chat-popup {

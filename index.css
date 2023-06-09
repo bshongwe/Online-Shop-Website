@@ -33,7 +33,7 @@ span {
 div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
-  float: center;
+  float: left;
   width: 180px;
 }
 

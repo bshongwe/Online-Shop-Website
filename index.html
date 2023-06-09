@@ -81,34 +81,60 @@
     </div>
 
     <div class="typing-container">
+        <style>
+            .typing-container {
+                border: 1px solid #000;
+                padding: 10px;
+                width: 400px;
+                height: 200px; /* Add a fixed height for the container */
+                position: absolute; /* Set the position to absolute */
+                top: 50%; /* Align the top edge to the vertical center */
+                left: 50%; /* Align the left edge to the horizontal center */
+                transform: translate(-50%, -50%); /* Adjust the position to center both horizontally and vertically */
+            }
+        </style>
         <div class="animated-text">
             <p id="demo">
                 <span id="text-span">Scents that make sense</span>
             </p>
+            <style>
+    .typing-container {
+        border: 1px solid #000;
+        padding: 10px;
+        width: 400px;
+        height: 200px; /* Add a fixed height for the container */
+        position: absolute; /* Set the position to absolute */
+        top: 50%; /* Align the top edge to the vertical center */
+        left: 50%; /* Align the left edge to the horizontal center */
+        transform: translate(-50%, -50%); /* Adjust the position to center both horizontally and vertically */
+    }
+</style>
+
         </div>
-    </div>
-    <script>
-        var i = 0;
-        var txt = 'Scents that make sense';
-        var speed = 100;
-          
-        function typeWriter() {
-            if (i < txt.length) {
-                document.getElementById("text-span").innerHTML += txt.charAt(i);
-                i++;
-                setTimeout(typeWriter, speed);
-            } else {
-                // Animation re-trigger
-                i = 0;
-                document.getElementById("text-span").innerHTML = '';
-                setTimeout(typeWriter, speed);
-            }
-        }
     
-        window.onload = function() {
-            typeWriter();
-        };
-    </script>
+        <script>
+            var i = 0;
+            var txt = 'Scents that make sense';
+            var speed = 100;
+          
+            function typeWriter() {
+                if (i < txt.length) {
+                    document.getElementById("text-span").innerHTML += txt.charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                } else {
+                // Animation re-trigger
+                    i = 0;
+                    document.getElementById("text-span").innerHTML = '';
+                    setTimeout(typeWriter, speed);
+                }
+            }
+    
+            window.onload = function() {
+                typeWriter();
+            };
+        </script>
+    </div>
         
         <div class="row">
             <div class="col-md-4">
